@@ -66,6 +66,36 @@ h1 { font-size: clamp(1.6rem, 3vw, 2.4rem); line-height: 1.25; margin: .4rem 0 1
 .gallery h2 { margin-bottom: 1rem; }
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
 .gallery-item { aspect-ratio: 4/3; border-radius: var(--radius); overflow: hidden; background: #ddd; }
+/* Gallery */
+.gallery { padding: 2.5rem 0; }
+.gallery h2 { margin-bottom: 1rem; }
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+.gallery-item { aspect-ratio: 4/3; border-radius: var(--radius); overflow: hidden; background: #ddd; }
+
+/* Tambahan efek Gallery */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1); /* zoom in pas hover */
+}
+
+.gallery-item {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Map */
+.map-section { padding: 2.5rem 0; }
 
 /* Map */
 .map-section { padding: 2.5rem 0; }
@@ -77,5 +107,6 @@ footer { background: #fff; border-top: 1px solid var(--light-gray); padding: 2re
 @media (max-width: 860px) { .footer-grid { grid-template-columns: 1fr; } }
 .socials { display: flex; gap: .5rem; margin-top: 1rem; }
 .socials a { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--black); color: var(--white); font-size: 18px; }
+
 
 
