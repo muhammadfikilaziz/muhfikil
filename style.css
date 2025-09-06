@@ -38,8 +38,9 @@ header { position: sticky; top: 0; backdrop-filter: blur(6px); background: rgba(
 .hero { padding: 2rem 0; }
 .hero .card { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); padding: 1rem; }
 @media (max-width: 900px) { .hero .card { grid-template-columns: 1fr; } }
-
 .photo img { border-radius: var(--radius); }
+
+
 .copy { padding: 0 1rem; }
 .eyebrow { font-weight: 700; text-transform: uppercase; letter-spacing: .15em; color: var(--gray); font-size: .85rem; }
 h1 { font-size: clamp(1.6rem, 3vw, 2.4rem); line-height: 1.25; margin: .4rem 0 1rem; }
@@ -107,6 +108,7 @@ footer { background: #fff; border-top: 1px solid var(--light-gray); padding: 2re
 @media (max-width: 860px) { .footer-grid { grid-template-columns: 1fr; } }
 .socials { display: flex; gap: .5rem; margin-top: 1rem; }
 .socials a { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--black); color: var(--white); font-size: 18px; }
+
 
 
 
