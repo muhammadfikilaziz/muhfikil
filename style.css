@@ -62,38 +62,62 @@ h1 { font-size: clamp(1.6rem, 3vw, 2.4rem); line-height: 1.25; margin: .4rem 0 1
 .post-title { font-size: 1.05rem; font-weight: 800; margin: .2rem 0 .4rem; }
 .meta { color: var(--gray); font-size: .9rem; }
 
-/* Gallery */
-.gallery { padding: 2.5rem 0; }
-.gallery h2 { margin-bottom: 1rem; }
-.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-.gallery-item { aspect-ratio: 4/3; border-radius: var(--radius); overflow: hidden; background: #ddd; }
-/* Gallery */
-.gallery { padding: 2.5rem 0; }
-.gallery h2 { margin-bottom: 1rem; }
-.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-.gallery-item { aspect-ratio: 4/3; border-radius: var(--radius); overflow: hidden; background: #ddd; }
-
-/* Tambahan efek Gallery */
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
+/* === Polaroid Gallery === */
+.polaroid-gallery {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f7f7f7;
 }
 
-.gallery-item:hover img {
-  transform: scale(1.1); /* zoom in pas hover */
+.polaroid-gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
 }
 
-.gallery-item {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+.polaroid-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.polaroid {
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  width: 180px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
-.gallery-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+.polaroid img {
+  width: 100%;
+  display: block;
+  border-radius: 2px;
 }
+
+.polaroid p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.polaroid:nth-child(1) { transform: rotate(-5deg); }
+.polaroid:nth-child(2) { transform: rotate(3deg); }
+.polaroid:nth-child(3) { transform: rotate(-2deg); }
+.polaroid:nth-child(4) { transform: rotate(6deg); }
+.polaroid:nth-child(5) { transform: rotate(-4deg); }
+
+.polaroid:hover {
+  transform: scale(1.1) rotate(0deg);
+  z-index: 10;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
 
 /* Map */
 .map-section { padding: 2.5rem 0; }
@@ -108,6 +132,7 @@ footer { background: #fff; border-top: 1px solid var(--light-gray); padding: 2re
 @media (max-width: 860px) { .footer-grid { grid-template-columns: 1fr; } }
 .socials { display: flex; gap: .5rem; margin-top: 1rem; }
 .socials a { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--black); color: var(--white); font-size: 18px; }
+
 
 
 
