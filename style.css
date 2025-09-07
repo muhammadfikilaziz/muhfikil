@@ -148,6 +148,28 @@ h1 { font-size: clamp(1.6rem, 3vw, 2.4rem); line-height: 1.25; margin: .4rem 0 1
   box-shadow: 0 12px 25px rgba(0,0,0,0.3);
 }
 
+/* Tambahan untuk efek numpuk */
+.gallery-grid {
+  position: relative;
+}
+
+.gallery-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 200px;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 6px;
+}
+
+
 
 /* Map */
 .map-section { padding: 2.5rem 0; }
@@ -162,6 +184,7 @@ footer { background: #fff; border-top: 1px solid var(--light-gray); padding: 2re
 @media (max-width: 860px) { .footer-grid { grid-template-columns: 1fr; } }
 .socials { display: flex; gap: .5rem; margin-top: 1rem; }
 .socials a { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--black); color: var(--white); font-size: 18px; }
+
 
 
 
