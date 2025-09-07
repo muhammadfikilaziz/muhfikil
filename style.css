@@ -35,10 +35,40 @@ header { position: sticky; top: 0; backdrop-filter: blur(6px); background: rgba(
 .links a { padding: .5rem .75rem; border-radius: 999px; color: var(--dark); font-weight: 600; transition: all .3s ease; }
 .links a:hover { background: var(--dark); color: var(--white); }
 
-.hero { padding: 2rem 0; }
-.hero .card { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); padding: 1rem; }
-@media (max-width: 900px) { .hero .card { grid-template-columns: 1fr; } }
-.photo img { border-radius: var(--radius); }
+.hero {
+  padding: 2rem 0;
+}
+
+.hero .card {
+  display: flex;               /* ubah dari grid jadi flex */
+  align-items: center;
+  gap: 2rem;
+  background: #fff;
+  border-radius: var(--radius);
+}
+
+.photo img {
+  max-width: 400px;            /* foto lebih kecil */
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+.hero .copy {
+  flex: 1;                     /* teks ambil ruang sisa */
+}
+
+@media (max-width: 900px) {
+  .hero .card {
+    flex-direction: column;    /* di HP, stack ke bawah */
+    text-align: center;
+  }
+
+  .photo img {
+    max-width: 100%;
+  }
+}
+
 
 
 .copy { padding: 0 1rem; }
@@ -132,6 +162,7 @@ footer { background: #fff; border-top: 1px solid var(--light-gray); padding: 2re
 @media (max-width: 860px) { .footer-grid { grid-template-columns: 1fr; } }
 .socials { display: flex; gap: .5rem; margin-top: 1rem; }
 .socials a { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--black); color: var(--white); font-size: 18px; }
+
 
 
 
