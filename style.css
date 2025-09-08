@@ -48,7 +48,7 @@ header { position: sticky; top: 0; backdrop-filter: blur(6px); background: rgba(
 }
 
 .photo img {
-  max-width: 400px;            /* foto lebih kecil */
+  max-width: 350px;            /* foto lebih kecil */
   width: 100%;
   height: auto;
   border-radius: var(--radius);
@@ -137,6 +137,7 @@ h1 { font-size: clamp(1.6rem, 3vw, 2.4rem); line-height: 1.25; margin: .4rem 0 1
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
+
 
 
 
