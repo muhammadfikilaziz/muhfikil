@@ -45,7 +45,7 @@ header {
 .hero {
   position: relative;
   height: 100vh;
-  background: url('your-background.jpg') center/cover no-repeat;
+  background: url('bukitparalayang.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,3 +78,4 @@ header {
   font-weight: 400;
   color: #00eaff;
 }
+
