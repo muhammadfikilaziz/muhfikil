@@ -1,176 +1,35 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Muhammad Fikil Aziz — Traveling Inspiratif</title>
-  <meta name="description" content="Personal blog Muhammad Fikil Aziz, seorang pecinta traveling yang berbagi kisah inspiratif dengan gaya hidup sederhana dan bermakna." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Branding - Jack Barker</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="topbar">Selamat datang di blog pribadi <strong>Muhammad Fikil Aziz</strong></div>
-
+  <!-- Navbar -->
   <header>
-    <div class="wrap">
-      <nav class="nav">
-        <a href="#" class="brand">
-          <span class="logo">Muhammad Fikil Aziz <small>Traveler & Inspirator</small></span>
-        </a>
-        <div class="links">
-          <a href="#travel">Travel</a>
-          <a href="#stories">Stories</a>
-          <a href="#tips">Tips</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#map">Destinasi</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-    </div>
+    <nav class="navbar">
+      <div class="logo">ZUMAN</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#testimonial">Testimonial</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="wrap">
-      <div class="card">
-        <div class="photo">
-          <img src="bukitparalayang.jpg" alt="Yogyakarta-Bukit Paralayang">
-        </div>
-        <div class="copy">
-          <div class="eyebrow">travel & inspiration</div>
-          <h1>Halo, saya <strong>Muhammad Fikil Aziz</strong>, seorang pecinta traveling yang ingin berbagi kisah perjalanan penuh makna.</h1>
-          <p class="lead">Setiap langkah di perjalanan bukan hanya untuk menikmati dunia, tapi juga untuk menginspirasi orang lain agar berani menjelajah dan menemukan arti hidup.</p>
-          <div class="cta">
-            <a class="btn btn-primary" href="#stories">Baca Cerita</a>
-            <a class="btn btn-ghost" href="#tips">Tips Traveling</a>
-          </div>
-        </div>
-      </div>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <p>Hi There, I'm</p>
+      <h1>Jack Barker</h1>
+      <h3>UI/UX Designer & Developer</h3>
     </div>
   </section>
-
-  <!-- Travel -->
-  <section id="travel" class="section">
-    <div class="wrap">
-      <h2>Travel</h2>
-      <p>Berisi pengalaman perjalanan saya ke berbagai destinasi, mulai dari gunung, pantai, hingga budaya lokal yang penuh inspirasi.</p>
-    </div>
-  </section>
-
-  <!-- Stories -->
-  <section id="stories" class="section">
-    <div class="wrap">
-      <h2>Cerita Terbaru</h2>
-      <div class="grid">
-        <article class="card-post">
-          <div class="thumb"></div>
-          <div class="post-body">
-            <div class="meta">Indonesia • Gunung</div>
-            <h3 class="post-title"><a href="#">Pendakian yang Mengubah Cara Pandang Hidup</a></h3>
-          </div>
-        </article>
-        <article class="card-post">
-          <div class="thumb"></div>
-          <div class="post-body">
-            <div class="meta">Asia • Budaya</div>
-            <h3 class="post-title"><a href="#">Menjelajahi Tradisi Lokal yang Menginspirasi</a></h3>
-          </div>
-        </article>
-        <article class="card-post">
-          <div class="thumb"></div>
-          <div class="post-body">
-            <div class="meta">Tips • Inspirasi</div>
-            <h3 class="post-title"><a href="#">Cara Traveling Hemat tapi Tetap Bermakna</a></h3>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tips -->
-  <section id="tips" class="section">
-    <div class="wrap">
-      <h2>Tips Traveling</h2>
-      <p>Kumpulan tips praktis agar perjalanan lebih hemat, aman, dan penuh pengalaman berkesan. Mulai dari persiapan, perlengkapan, hingga manajemen waktu.</p>
-    </div>
-  </section>
-
-  <!-- Gallery -->
-<!-- Gallery -->
-<section id="gallery" class="gallery-section">
-  <h2>Galeri Perjalanan</h2>
-  <div class="gallery-grid">
-    <div class="gallery-item">
-      <img src="bukitparalayang.jpg" alt="Foto 1">
-    </div>
-    <div class="gallery-item">
-      <img src="bukitparalayang.jpg" alt="Foto 2">
-    </div>
-    <div class="gallery-item">
-      <img src="bukitparalayang.jpg" alt="Foto 3">
-    </div>
-    <div class="gallery-item">
-      <img src="bukitparalayang.jpg" alt="Foto 4">
-    </div>
-    <div class="gallery-item">
-      <img src="bukitparalayang.jpg" alt="Foto 5">
-    </div>
-  </div>
-</section>
-
-<!-- Map -->
-<section id="map" class="map-section">
-  <h2>Peta Destinasi Saya</h2>
-  <iframe 
-    class="map-frame"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126764.82314381441!2d106.6894313!3d-6.2297289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e8f3d92a01%3A0x301576d14febd40!2sJakarta!5e0!3m2!1sid!2sid!4v1694000000000!5m2!1sid!2sid"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-</section>
-    <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="wrap">
-      <h2>Kontak</h2>
-      <p>Email: <a href="mailto:muhfikilaziz@gmail.com">muhfikilaziz@gmail.com</a></p>
-      <p>Instagram: <a href="https://www.instagram.com/muhfikilaziz" target="_blank">@muhfikilaziz</a></p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="wrap footer-grid">
-      <div>
-        <span class="logo">Muhammad Fikil Aziz <small>Traveler & Inspirator</small></span>
-        <p style="color:var(--gray);max-width:50ch">Blog pribadi tentang perjalanan dan inspirasi. Saya percaya setiap langkah bisa menjadi cerita yang membangkitkan semangat orang lain.</p>
-        <div class="socials">
-          <a href="https://www.instagram.com/muhfikilaziz" target="_blank" aria-label="Instagram">📷</a>
-        </div>
-      </div>
-      <div>
-        <h3>Navigasi</h3>
-        <nav>
-          <a href="#travel">Travel</a><br/>
-          <a href="#stories">Stories</a><br/>
-          <a href="#tips">Tips</a><br/>
-          <a href="#gallery">Gallery</a><br/>
-          <a href="#map">Destinasi</a><br/>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
